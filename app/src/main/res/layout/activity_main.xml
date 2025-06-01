@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?> <!-- XML declaration defining encoding and version used -->
+
+<!-- root layout container, arranges elements vertically -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF">
+
+    <!-- First line of the app title-->
+    <TextView
+        android:id="@+id/title_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/culinary"
+        android:textAlignment="center"
+        android:textSize="39sp"
+        android:textStyle="bold" />
+
+    <!-- Second line of the app title -->
+    <TextView
+        android:id="@+id/title_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/companion"
+        android:textSize="39sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:textAlignment="center" />
+
+    <!-- Button: BREAKFAST -->
+    <Button
+        android:id="@+id/btn_breakfast"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="@string/breakfast"
+        android:layout_marginBottom="12dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:background="@drawable/rounded_button" />
+
+    <!-- Button: BRUNCH -->
+    <Button
+        android:id="@+id/btn_brunch"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="@string/brunch"
+        android:layout_marginBottom="12dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:background="@drawable/rounded_button"/>
+
+    <!-- Button: LUNCH -->
+    <Button
+        android:id="@+id/btn_lunch"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="@string/lunch"
+        android:layout_marginBottom="12dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:background="@drawable/rounded_button"/>
+
+    <!-- Button: DINNER -->
+    <Button
+        android:id="@+id/btn_dinner"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="@string/dinner"
+        android:layout_marginBottom="12dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:background="@drawable/rounded_button"/>
+
+    <!-- Button: DESSERTS -->
+    <Button
+        android:id="@+id/btn_desserts"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="@string/desserts"
+        android:layout_marginBottom="12dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:background="@drawable/rounded_button"/>
+
+    <!-- Button: OTHER -->
+    <Button
+        android:id="@+id/btn_other"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="@string/other"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:background="@drawable/rounded_button"/>
+
+</LinearLayout>
