@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- XML declaration defining encoding and version used -->
+
+<!-- ScrollView allows vertical scrolling if content exceeds screen height -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <!-- Child layout inside ScrollView arranges views vertically -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header with Cancel X icon and centered title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="9dp">
+
+            <!-- X button on the left -->
+            <ImageView
+                android:id="@+id/btn_cancel"
+                android:layout_width="34dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_close"
+                android:contentDescription="@string/cancel"
+                android:layout_marginEnd="12dp" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/edit_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/edit_recipe"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+        <!-- Divider line under the title -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Name Label -->
+        <TextView
+            android:id="@+id/label_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/name_label"/>
+
+        <!-- Name Input -->
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="24dp"
+            android:hint="@string/Enter_name"
+            android:importantForAccessibility="yes"
+            android:autofillHints="name"
+            android:labelFor="@id/label_name" />
+
+        <!-- Ingredients Label -->
+        <TextView
+            android:id="@+id/label_ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ingredients"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Ingredients Input -->
+        <EditText
+            android:id="@+id/edit_ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:gravity="top"
+            android:layout_marginBottom="24dp"
+            android:hint="@string/ingredient"
+            android:autofillHints="ingredients"/>
+
+        <!-- Instructions Label -->
+        <TextView
+            android:id="@+id/label_instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Instructions Input -->
+        <EditText
+            android:id="@+id/edit_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:gravity="top"
+            android:layout_marginBottom="25dp"
+            android:hint="@string/instruction"
+            android:autofillHints="instructions"/>
+
+        <!-- Category Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Category Spinner -->
+        <Spinner
+            android:id="@+id/spinner_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#000000" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/save"
+            android:textSize="18sp"
+            android:backgroundTint="#7B61FF"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
