@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!-- XML declaration defining encoding and version used -->
+
+<!-- Layout file for a single recipe item displayed in the RecyclerView -->
+
+<!--Container for each recipe item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#F5F5F5"
+    android:layout_marginBottom="8dp">
+
+    <!-- Display the title of the recipe -->
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Recipe_Title"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+</LinearLayout>
