@@ -1,0 +1,52 @@
+<resources>
+    <!-- Strings used in the app -->
+
+    <!-- Strings for activity_main.xml -->
+    <string name="app_name">Culinary Companion</string>
+    <string name="culinary">CULINARY</string>
+    <string name="companion">COMPANION</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="brunch">Brunch</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="desserts">Desserts</string>
+    <string name="other">Other</string>
+
+    <!-- Strings for activity_recipe_list.xml -->
+    <string name="add_recipe">Add Recipe</string>
+    <string name="menu">Menu</string>
+    <string name="recipes">RECIPES</string>
+
+    <string name="back">Back</string>
+    <string name="category_label">Category: %1$s</string>
+
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="save">SAVE</string>
+    <string name="name">Name</string>
+    <string name="edit_recipe">EDIT RECIPE</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="instructions">Instructions</string>
+    <string name="name_label">Label name</string>
+
+    <string name="Enter_name">Enter name</string>
+    <string name="ingredient">Enter ingredients</string>
+    <string name="instruction">Enter instructions</string>
+    <string name="Recipe_example1">Recipe 1</string>
+    <string name="Recipe_example2">Recipe 2</string>
+    <string name="Recipe_example3">Recipe 3</string>
+    <string name="Recipe_example4">Recipe 4</string>
+    <string name="Recipe">Recipe</string>
+    <string name="Name_in_box">Example Recipe Name</string>
+    <string name="Ingredients_in_box">• Eggs\n• Flour\n• Milk</string>
+    <string name="Instructions_in_box">1. Mix ingredients\n2. Heat pan\n3. Cook until golden</string>
+    <string name="category">Category</string>
+    <string name="category_in_dropDownMenu">Breakfast</string>
+    <string name="Plus_button">+</string>
+    <string name="Empty_recipe_list">No recipes found.</string>
+    <string name="Recipe_Title">Recipe Title.</string>
+    <string name="recipe_list_desc">List of recipes</string>
+
+</resources>
